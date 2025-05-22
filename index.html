@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/work.css">
 </head>
 <body>
     <!-- Header -->
@@ -50,42 +52,77 @@
     <!-- Navigation -->
     <nav class="app-nav">
         <div class="content">
-            <div class="item intro is--active">Intro</div>
-            <div class="item Work">Work</div>
-            <div class="item Background">Background</div>
-            <div class="item About">About</div>
-            <div class="item contact">Let's talk</div>
+            <div class="item intro is--active" data-target="#intro">Intro</div>
+            <div class="item Work" data-target="#work">Work</div>
+            <div class="item Background" data-target="#background">Background</div>
+            <div class="item About" data-target="#about">About</div>
+            <div class="item contact">
+                <a href="#contact">Let's talk</a>
+            </div>
         </div>
     </nav>
     
     <!-- Main -->
      <main class="app-main">
-        <section class="section intro" id="intro">
-            <div class="content">
-                <!-- Options -->
-                <div class="options">
-                    <div class="option is--active" data-target="anyone">Anyone</div>
-                    <div class="option" data-target="recruiters">Recruiters</div>
-                    <div class="option" data-target="developers">Developers</div>
-                </div>
+        <section class="section intro is--visible" id="intro">
+            <div class="intro-wrapper">
+                <div class="content">
+                    <!-- Options -->
+                    <div class="options">
+                        <div class="option is--active" data-target="anyone">Anyone</div>
+                        <div class="option" data-target="recruiters">Recruiters</div>
+                        <div class="option" data-target="developers">Developers</div>
+                    </div>
 
-                 <!-- Text displayed based on options -->
-                <div class="texts">
-                    <h1 class="text anyone is--visible">
-                        Heisann, dette er en <br>person som forsøker å lære <br>om programmering.
-                    </h1>
-                    <h1 class="text recruiters">
-                        Heisann, dette dette dette er en <br>person som forsøker å lære <br>om programmering.
-                    </h1>
-                    <h1 class="text developers">
-                        Heisann, detdddte eeeer en <br>person som forsøker å lære <br>om programmering.
-                    </h1>
+                    <!-- Text displayed based on options -->
+                    <div class="texts">
+                        <h1 class="text anyone is--visible">
+                            Heisann, dette er en <br>person som forsøker å lære <br>om programmering.
+                        </h1>
+                        <h1 class="text recruiters">
+                            Heisann, dette dette dette er en <br>person som forsøker å lære <br>om programmering.
+                        </h1>
+                        <h1 class="text developers">
+                            Heisann, detdddte eeeer en <br>person som forsøker å lære <br>om programmering.
+                        </h1>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Sections -->
+        <section class="section-work" id="work">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="https://github.com/jkrarmstrong/prosjekt1" target="_blank">
+                        <h3 Prosjekt 1></h3>
+                    </a>
+                    <p>Kort beskrivelse av prosjektet</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/jkrarmstrong/prosjekt2" target="_blank">
+                        <h3 Prosjekt 2></h3>
+                    </a>
+                    <p>Kort beskrivelse av prosjektet</p>
+                </div>
+            </div>
+        </section>
+
      </main>
+
+     <!-- Footer -->
+    <footer class="contact-section" id="contact">
+        <div class="content">
+            <h2>Let's talk</h2>
+            <p>
+                <a href="https://www.linkedin.com/in/jkrarmstrong/" target="_blank">LinkedIn</a><br>
+                <a href="mailto:jkr.armstrong@gmail.com">Gmail</a>
+            </p>
+        </div>
+    </footer>
 
 <!-- Scripts -->
 <script src="js/intro-toggle.js"></script>
+<script src="js/section-toggle.js"></script>
 </body>
 </html>

@@ -1,5 +1,10 @@
 
-.name-hover{
+
+.app-header {
+    position: fixed;
+}
+
+.name-hover {
     display: inline-block;
     cursor: pointer;
     position: relative;

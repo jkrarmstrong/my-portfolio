@@ -4,16 +4,18 @@
     display: flex;
     flex-direction: column;
     padding-left: 220px;
+    padding-top: 230px;
 }
 
-/* Intro section */
-.section.intro .content {
+.section.intro {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    width: max-content;
-    padding-right: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
+
 
 
 /* Options columns */
@@ -50,4 +52,14 @@
 .text.is--visible {
     display: block;
     opacity: 1;
+}
+
+/* Skjul alle seksjoner */
+.app-main section {
+    display: none;
+}
+
+/* Vis aktiv seksjon */
+.app-main section.is--visible {
+    display: block;
 }
