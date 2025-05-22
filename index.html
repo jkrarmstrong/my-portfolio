@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Armstrong - Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <div class="header-content flex">
+            <div class="brand">
+                <h3 class="name-hover">
+                    <span class="first-letter">A.</span>
+                    <span class="full-name">
+                        <span>J</span>
+                        <span>O</span>
+                        <span>H</span>
+                        <span>N</span>
+                        <span> </span>
+                        <span>A</span>
+                        <span>R</span>
+                        <span>M</span>
+                        <span>S</span>
+                        <span>T</span>
+                        <span>R</span>
+                        <span>O</span>
+                        <span>N</span>
+                        <span>G</span>
+                    </span>
+                </h3>
+            </div>
+            <!-- Her skal det egt komme en actions bar som linker til table of contents -->
+            <div class="actions flex">
+                <div class="options navigation flex">
+                    <div class="content">
+                        <div class="icon flex">
+                            <div class="line"><div class="content"></div></div>
+                            <div class="line"><div class="content"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation -->
+    <nav class="app-nav">
+        <div class="content">
+            <div class="item intro is--active">Intro</div>
+            <div class="item Work">Work</div>
+            <div class="item Background">Background</div>
+            <div class="item About">About</div>
+            <div class="item contact">Let's talk</div>
+        </div>
+    </nav>
+    
+    <!-- Main -->
+     <main class="app-main">
+        <section class="section intro" id="intro">
+            <div class="content">
+                <!-- Options -->
+                <div class="options">
+                    <div class="option is--active" data-target="anyone">Anyone</div>
+                    <div class="option" data-target="recruiters">Recruiters</div>
+                    <div class="option" data-target="developers">Developers</div>
+                </div>
+
+                 <!-- Text displayed based on options -->
+                <div class="texts">
+                    <h1 class="text anyone is--visible">
+                        Heisann, dette er en <br>person som forsøker å lære <br>om programmering.
+                    </h1>
+                    <h1 class="text recruiters">
+                        Heisann, dette dette dette er en <br>person som forsøker å lære <br>om programmering.
+                    </h1>
+                    <h1 class="text developers">
+                        Heisann, detdddte eeeer en <br>person som forsøker å lære <br>om programmering.
+                    </h1>
+                </div>
+            </div>
+        </section>
+     </main>
+
+<!-- Scripts -->
+<script src="js/intro-toggle.js"></script>
+</body>
+</html>

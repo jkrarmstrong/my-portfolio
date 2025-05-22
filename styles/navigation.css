@@ -1,0 +1,36 @@
+
+/* Navigation bar container */
+.app-nav {
+    position: fixed;
+    top: 80px;
+    left: 0.5rem;
+    width: 200px;
+    padding-top: 150px;
+    height: 100%;
+}
+
+/* Content */
+.app-nav .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+/* Styling for contents that's not active */
+.app-nav .item:not(.is--active) {
+    opacity: 50%;
+    cursor: pointer;
+    transition: font-weight 0.2s ease;
+
+}
+
+/* Item that's active */
+.app-nav .is--active {
+  font-weight: bold;
+}
+
+/* When you hover a non active item */
+.app-nav .item:hover:not(.is--active) {
+    cursor: pointer;
+    opacity: 90%;
+}

@@ -1,0 +1,48 @@
+
+.name-hover{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+/* First letter always shows */
+.name-hover .first-letter {
+    display: inline-block;
+    transition: opacity 0.3s ease;
+
+}
+
+/* Full name not displayed at first */
+.name-hover .full-name span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Delayed animations for letters */
+.name-hover .full-name span:nth-child(1)  { transition-delay: 0.05s; }
+.name-hover .full-name span:nth-child(2)  { transition-delay: 0.10s; }
+.name-hover .full-name span:nth-child(3)  { transition-delay: 0.15s; }
+.name-hover .full-name span:nth-child(4)  { transition-delay: 0.20s; }
+.name-hover .full-name span:nth-child(5)  { transition-delay: 0.25s; }
+.name-hover .full-name span:nth-child(6)  { transition-delay: 0.30s; }
+.name-hover .full-name span:nth-child(7)  { transition-delay: 0.35s; }
+.name-hover .full-name span:nth-child(8)  { transition-delay: 0.40s; }
+.name-hover .full-name span:nth-child(9)  { transition-delay: 0.45s; }
+.name-hover .full-name span:nth-child(10) { transition-delay: 0.50s; }
+.name-hover .full-name span:nth-child(11) { transition-delay: 0.55s; }
+.name-hover .full-name span:nth-child(12) { transition-delay: 0.60s; }
+.name-hover .full-name span:nth-child(13) { transition-delay: 0.65s; }
+.name-hover .full-name span:nth-child(14) { transition-delay: 0.70s; }
+
+
+/* When user hovers, show full name */
+.name-hover:hover .full-name span {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.name-hover:hover .first-letter {
+    opacity: 0;
+}

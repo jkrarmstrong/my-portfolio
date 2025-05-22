@@ -1,0 +1,53 @@
+
+/* Main area */
+.app-main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 220px;
+}
+
+/* Intro section */
+.section.intro .content {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: max-content;
+    padding-right: 3rem;
+}
+
+
+/* Options columns */
+.options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.option {
+    cursor: pointer;
+    opacity: 50%;
+    font-weight: normal;
+    transition: all 0.2s ease;
+}
+
+.option:hover:not(.is--active) {
+    opacity: 90%;
+}
+
+.option.is--active {
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* Hide all text blocks by default */
+.text {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show selected text block */
+.text.is--visible {
+    display: block;
+    opacity: 1;
+}
