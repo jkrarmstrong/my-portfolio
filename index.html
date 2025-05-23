@@ -60,32 +60,29 @@
                 <a href="#contact">Let's talk</a>
             </div>
         </div>
-    </nav>
-    
+    </nav>    
     <!-- Main -->
      <main class="app-main">
         <section class="section intro is--visible" id="intro">
-            <div class="intro-wrapper">
-                <div class="content">
-                    <!-- Options -->
-                    <div class="options">
-                        <div class="option is--active" data-target="anyone">Anyone</div>
-                        <div class="option" data-target="recruiters">Recruiters</div>
-                        <div class="option" data-target="developers">Developers</div>
-                    </div>
+            <div class="content">
+                <!-- Options -->
+                <div class="options">
+                    <div class="option is--active" data-target="anyone">Anyone</div>
+                    <div class="option" data-target="recruiters">Recruiters</div>
+                    <div class="option" data-target="developers">Developers</div>
+                </div>
 
-                    <!-- Text displayed based on options -->
-                    <div class="texts">
-                        <h1 class="text anyone is--visible">
-                            Heisann, dette er en <br>person som forsøker å lære <br>om programmering.
-                        </h1>
-                        <h1 class="text recruiters">
-                            Heisann, dette dette dette er en <br>person som forsøker å lære <br>om programmering.
-                        </h1>
-                        <h1 class="text developers">
-                            Heisann, detdddte eeeer en <br>person som forsøker å lære <br>om programmering.
-                        </h1>
-                    </div>
+                <!-- Text displayed based on options -->
+                <div class="texts">
+                    <h1 class="text anyone is--visible">
+                        Heisann, dette er en <br>person som forsøker å lære <br>om programmering.
+                    </h1>
+                    <h1 class="text recruiters">
+                        Heisann, dette dette dette er en <br>person som forsøker å lære <br>om programmering.
+                    </h1>
+                    <h1 class="text developers">
+                        Heisann, detdddte eeeer en <br>person som forsøker å lære <br>om programmering.
+                    </h1>
                 </div>
             </div>
         </section>
@@ -94,16 +91,69 @@
         <section class="section-work" id="work">
             <div class="projects-grid">
                 <div class="project-card">
-                    <a href="https://github.com/jkrarmstrong/prosjekt1" target="_blank">
-                        <h3 Prosjekt 1></h3>
+                    <img src="images/donate.png" alt="Money donations website" class="project-image">
+                    <a href="https://strangerdonations.com" target="_blank">
+                        <h3>Money Donation App</h3>
                     </a>
-                    <p>Kort beskrivelse av prosjektet</p>
+                    <p>A simple web application that allows users to 
+                        donate money using Stripe. Built with Flask and styled with Tailwind CSS, 
+                        the app features a real-time donation tracker, 
+                        secure payment processing, and a clean user interface.</p>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Flask</li>
+                        <li>HTML/CSS</li>
+                        <li>Railway</li>
+                        <li>SQLite</li>
+                    </ul>
                 </div>
                 <div class="project-card">
-                    <a href="https://github.com/jkrarmstrong/prosjekt2" target="_blank">
-                        <h3 Prosjekt 2></h3>
+                    <img src="images/iss.png" alt="ISS At Night" class="project-image">
+                    <a href="https://github.com/jkrarmstrong/iss-tracker" target="_blank">
+                        <h3>ISS-tracker</h3>
                     </a>
-                    <p>Kort beskrivelse av prosjektet</p>
+                    <p>This project notifies you by email when the 
+                        International Space Station is overhead and 
+                        it is nighttime in your location.
+                    </p>
+                    <ul>
+                        <li>Python</li>
+                        <li>SMTPLib</li>
+                        <li>API (Open Notify, Sunrise-Sunset, Requests)</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <img src="images/iss.png" alt="ISS At Night" class="project-image">
+                    <a href="https://github.com/jkrarmstrong/billboard-hot100-browser" target="_blank">
+                        <h3>Billboard Hot 100 Scraper</h3>
+                    </a>
+                    <p>Hot 100 Time Machine is a Flask-based web application that allows users 
+                        to select a historical date and retrieve the Billboard Hot 100 chart for that day.
+                        Users can view the top songs and export the list if they wish.
+                    </p>
+                    <ul>
+                        <li>Python</li>
+                        <li>BeautifulSoup</li>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Pikaday</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <img src="images/iss.png" alt="ISS At Night" class="project-image">
+                    <a href="https://github.com/jkrarmstrong/movies_watchlist" target="_blank">
+                        <h3>Movie Watchlist</h3>
+                    </a>
+                    <p>This is a Flask-based web application for managing a movie watchlist. 
+                        Users can register, log in, add movies, view details, and track their 
+                        viewing progress. The app uses MongoDB for storing user data and movie information.
+                    </p>
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML/CSS</li>
+                        <li>MongoDB</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -125,4 +175,5 @@
 <script src="js/intro-toggle.js"></script>
 <script src="js/section-toggle.js"></script>
 </body>
+
 </html>

@@ -5,7 +5,5 @@ html {
 
 body {
   font-family: 'Space Mono', monospace;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  margin: 0;
 }

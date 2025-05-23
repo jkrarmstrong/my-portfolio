@@ -21,7 +21,7 @@ navItems.forEach(item => {
       targetSection.classList.add('is--visible');
     }
 
-    // Scroll til toppen av valgt seksjon
-    targetSection.scrollIntoView({ behavior: 'smooth' });
+    // Scroll til toppen av siden
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
