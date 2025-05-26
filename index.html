@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/work.css">
+    <link rel="stylesheet" href="styles/background.css">
 </head>
 <body>
     <!-- Header -->
@@ -56,12 +58,11 @@
             <div class="item Work" data-target="#work">Work</div>
             <div class="item Background" data-target="#background">Background</div>
             <div class="item About" data-target="#about">About</div>
-            <div class="item contact">
-                <a href="#contact">Let's talk</a>
-            </div>
+            <div class="item Contact" data-target="#contact">Let's talk</div>
         </div>
-    </nav>    
+    </nav>
     <!-- Main -->
+    <!-- Sections -->
      <main class="app-main">
         <section class="section intro is--visible" id="intro">
             <div class="content">
@@ -75,19 +76,29 @@
                 <!-- Text displayed based on options -->
                 <div class="texts">
                     <h1 class="text anyone is--visible">
-                        Heisann, dette er en <br>person som forsøker å lære <br>om programmering.
+                        Hi there, I'm a developer who enjoy bulding things that <br>are simple, useful and made to last.<br>
+                        I care about clear code, good design, and real results.<br><br>
+                        Simple ideas, solid structure, thoughtful execution — always.
                     </h1>
                     <h1 class="text recruiters">
-                        Heisann, dette dette dette er en <br>person som forsøker å lære <br>om programmering.
+                        I come from a background in UX systems work,<br> with experience from large organizations like Sopra Steria and Norsk Hydro.<br>
+                        Today, I build clean and maintainable web applications using mainly Python<br> — always with structure, care, and an eye for user experience.<br><br>
+                        Having worked closely with complex systems, business processes, and real users,<br>I know how to bridge the gap between what users need and how systems behave.<br><br>
+                        I'm comfortable working across teams, spotting inefficiencies,<br>and turning ideas into real, working tools.
                     </h1>
-                    <h1 class="text developers">
-                        Heisann, detdddte eeeer en <br>person som forsøker å lære <br>om programmering.
+                    <h1 class="text developers"> 
+                        I'm a fullstack-curious && Python-focused && always exploring<br> better ways to build.  
+                        <br>Studied informatics, I enjoy shipping clean logic,<br>good design, as well as wiring up the frontend when needed.
+                        <br><br>Built (<a href="legg_inn_lenken" target="_blank" class="code-link">this.site</a>) from scratch, 
+                        plus (<a href="https://strangerdonations.com/" target="_blank" class="code-link">that.other.one</a>)
+                        && (<a href="legg_inn_lenken" target="_blank" class="code-link">another.one</a>)
+                        <br><br>my.learning += { deeper_data_analysis, big_data_tools, real_world_insight }    
                     </h1>
                 </div>
             </div>
         </section>
 
-        <!-- Sections -->
+        <!-- Work section -->
         <section class="section-work" id="work">
             <div class="projects-grid">
                 <div class="project-card">
@@ -106,6 +117,7 @@
                         <li>HTML/CSS</li>
                         <li>Railway</li>
                         <li>SQLite</li>
+                        <li><a href="https://github.com/jkrarmstrong/donate-money" class="code-link" target="_blank">GitHub</a></li>
                     </ul>
                 </div>
                 <div class="project-card">
@@ -121,10 +133,11 @@
                         <li>Python</li>
                         <li>SMTPLib</li>
                         <li>API (Open Notify, Sunrise-Sunset, Requests)</li>
+                        <li><a href="https://github.com/jkrarmstrong/iss-tracker" class="code-link" target="_blank">GitHub</a></li>
                     </ul>
                 </div>
                 <div class="project-card">
-                    <img src="images/iss.png" alt="ISS At Night" class="project-image">
+                    <img src="images/hot100.png" alt="Hot 100 Machine" class="project-image">
                     <a href="https://github.com/jkrarmstrong/billboard-hot100-browser" target="_blank">
                         <h3>Billboard Hot 100 Scraper</h3>
                     </a>
@@ -138,10 +151,11 @@
                         <li>HTML/CSS</li>
                         <li>JavaScript</li>
                         <li>Pikaday</li>
+                        <li><a href="https://github.com/jkrarmstrong/billboard-hot100-browser" class="code-link" target="_blank">GitHub</a></li>
                     </ul>
                 </div>
                 <div class="project-card">
-                    <img src="images/iss.png" alt="ISS At Night" class="project-image">
+                    <img src="images/movies.png" alt="Movies Watchlist App" class="project-image">
                     <a href="https://github.com/jkrarmstrong/movies_watchlist" target="_blank">
                         <h3>Movie Watchlist</h3>
                     </a>
@@ -153,25 +167,40 @@
                         <li>Python</li>
                         <li>HTML/CSS</li>
                         <li>MongoDB</li>
+                        <li><a href="https://github.com/jkrarmstrong/movies_watchlist" class="code-link" target="_blank">GitHub</a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <!-- Background section -->
+        <section class="section-background" id="background">
+            <div class="content">
+                <p>
+                    I hold a bachelor's degree in Informatics: Design, Use, and Interaction from the University of Oslo, where I explored the intersection of user experience, technology, and system design. While my professional experience has primarily focused on analysis and system support, I’ve consistently maintained a deep interest in development and data.
+                </p>
+                <p>
+                    During my studies, I gained hands-on experience with programming languages such as Python and Java, as well as working with SQL and data structures. Combined with my natural curiosity and strong analytical mindset, this foundation has helped me transition into software development through independent projects and continuous learning.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="section-contact" id="contact">
+            <div class="content">
+                <h2>Hi:)</h2>
+                <p class="link-row">
+                    <a href="https://www.linkedin.com/in/jkrarmstrong/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/jkrarmstrong/" target="_blank">GitHub</a>
+                    <a href="mailto:jkr.armstrong@gmail.com">jkr.armstrong@gmail.com</a>
+                
+                </p>
+            </div>
+        </section>
+
      </main>
 
-     <!-- Footer -->
-    <footer class="contact-section" id="contact">
-        <div class="content">
-            <h2>Let's talk</h2>
-            <p>
-                <a href="https://www.linkedin.com/in/jkrarmstrong/" target="_blank">LinkedIn</a><br>
-                <a href="mailto:jkr.armstrong@gmail.com">Gmail</a>
-            </p>
-        </div>
-    </footer>
-
-<!-- Scripts -->
+     <!-- Scripts -->
 <script src="js/intro-toggle.js"></script>
 <script src="js/section-toggle.js"></script>
 </body>

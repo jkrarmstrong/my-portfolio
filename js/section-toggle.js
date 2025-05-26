@@ -1,6 +1,6 @@
 // Get all nav items that control sections
 const navItems = document.querySelectorAll('.app-nav .item');
-const allSections = document.querySelectorAll('[id]:not(#contact)'); // unngå footer
+const allSections = document.querySelectorAll('.app-main > section');
 
 // Handle click on nav items
 navItems.forEach(item => {
@@ -8,20 +8,19 @@ navItems.forEach(item => {
   if (!targetId) return;
 
   item.addEventListener('click', () => {
-    // Oppdater nav-aktiv tilstand
+    // Update navigation active state
     navItems.forEach(i => i.classList.remove('is--active'));
     item.classList.add('is--active');
 
-    // Skjul alle seksjoner
+    // Hide all sections
     allSections.forEach(section => section.classList.remove('is--visible'));
 
-    // Vis valgt seksjon
+    // Show choosen section
     const targetSection = document.querySelector(targetId);
     if (targetSection) {
       targetSection.classList.add('is--visible');
     }
 
-    // Scroll til toppen av siden
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });

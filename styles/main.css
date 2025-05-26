@@ -14,9 +14,8 @@
 
 .section.intro .content {
     text-align: center;
+    margin-right: 2rem;
 }
-
-
 
 /* Options columns */
 .options {
@@ -48,19 +47,28 @@
     transition: opacity 0.3s ease;
 }
 
+
+.code-link {
+    text-decoration: none;
+    color: #D5451B !important;
+}
+
+.code-link:hover {
+    text-decoration: underline;
+}
+
 /* Show selected text block */
 .text.is--visible {
     display: block;
     opacity: 1;
 }
 
-/* Skjul alle seksjoner */
+/* Hide all sections */
 .app-main section {
-    display: none;
+    display: none; 
 }
 
-/* Vis aktiv seksjon */
+/* Show active section*/
 .app-main section.is--visible {
     display: block;
 }
-

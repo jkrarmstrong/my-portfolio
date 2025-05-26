@@ -2,7 +2,6 @@
 /* Show only one section at a time */
 .section-work {
     display: none;
-    padding: 0.5rem;
 }
 
 .section-work.is--visible {
@@ -14,6 +13,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
 }
 
 .project-card {
@@ -33,6 +34,7 @@
 .project-card h3 {
   margin-bottom: 0.5rem;
   cursor: pointer;
+  color: #D5451B;
 }
 
 .project-card a {
