@@ -1,66 +1,19 @@
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  background-color: #FBF6E9;
+  
+}
+
 /* Main area */
 .app-main {
     padding-left: 220px;
     padding-top: 230px;
-}
-
-.section.intro .options {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-}
-
-.section.intro .content {
-    text-align: center;
-    margin-right: 2rem;
-}
-
-/* Options columns */
-.options {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.option {
-    cursor: pointer;
-    opacity: 50%;
-    font-weight: normal;
-    transition: all 0.2s ease;
-}
-
-.option:hover:not(.is--active) {
-    opacity: 90%;
-}
-
-.option.is--active {
-    font-weight: bold;
-    opacity: 1;
-}
-
-/* Hide all text blocks by default */
-.text {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-
-.code-link {
-    text-decoration: none;
-    color: #D5451B !important;
-}
-
-.code-link:hover {
-    text-decoration: underline;
-}
-
-/* Show selected text block */
-.text.is--visible {
-    display: block;
-    opacity: 1;
 }
 
 /* Hide all sections */
@@ -71,4 +24,12 @@
 /* Show active section*/
 .app-main section.is--visible {
     display: block;
+}
+.code-link {
+    text-decoration: none;
+    color: #D5451B !important;
+}
+
+.code-link:hover {
+    text-decoration: underline;
 }

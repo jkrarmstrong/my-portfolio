@@ -1,0 +1,32 @@
+
+.section-about {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.section-about .content {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.section-about .logo-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.logo-icon {
+  width: 150px;
+  height: auto;
+}
+

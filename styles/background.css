@@ -21,3 +21,31 @@
     margin-top: 0;
 }
 
+.section-background .career-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-background .co-name {
+  text-decoration: none;
+  color: #D5451B;
+  padding: 0.5rem;
+}
+
+.section-background .co-name:hover {
+  text-decoration: underline;
+}
+
+.section-background .career-wrapper p {
+  font-size: 0.85rem;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid;
+  width: 100%;
+  max-width: 700px;
+  opacity: 20%;
+}
+
+

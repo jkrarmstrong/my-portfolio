@@ -1,0 +1,49 @@
+
+.section.intro .options {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.section.intro .content {
+    text-align: center;
+    margin-right: 2rem;
+}
+
+/* Options columns */
+.options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.option {
+    cursor: pointer;
+    opacity: 50%;
+    font-weight: normal;
+    transition: all 0.2s ease;
+}
+
+.option:hover:not(.is--active) {
+    opacity: 90%;
+}
+
+.option.is--active {
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* Hide all text blocks by default */
+.text {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Show selected text block */
+.text.is--visible {
+    display: block;
+    opacity: 1;
+}
